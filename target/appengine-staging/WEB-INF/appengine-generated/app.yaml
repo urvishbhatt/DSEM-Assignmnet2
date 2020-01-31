@@ -1,0 +1,45 @@
+runtime: java8
+inbound_services:
+- warmup
+derived_file_type:
+- java_precompiled
+threadsafe: True
+auto_id_policy: default
+api_version: 'user_defined'
+handlers:
+- url: /
+  script: unused
+  login: optional
+  secure: optional
+- url: /.*/
+  script: unused
+  login: optional
+  secure: optional
+- url: /_ah/.*
+  script: unused
+  login: optional
+  secure: optional
+- url: .*\.jsp
+  script: unused
+  login: optional
+  secure: optional
+- url: /voting_portal
+  script: unused
+  login: optional
+  secure: optional
+- url: /email_import
+  script: unused
+  login: optional
+  secure: optional
+- url: /add_candidate
+  script: unused
+  login: optional
+  secure: optional
+- url: /datepicker
+  script: unused
+  login: optional
+  secure: optional
+- url: /backend
+  script: unused
+  login: optional
+  secure: optional
