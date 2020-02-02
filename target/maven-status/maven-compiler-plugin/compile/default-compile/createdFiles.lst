@@ -1,6 +1,11 @@
+com\example\appengine\java8\Services\CandidateService.class
 com\example\appengine\java8\VotingPortalServlet.class
 com\example\appengine\java8\BackendServlet.class
+com\example\appengine\java8\Entity\Candidate.class
+com\example\appengine\java8\Services\UploadEmailService.class
 com\example\appengine\java8\DatePickerServlet.class
 com\example\appengine\java8\Services\DateSetter.class
+com\example\appengine\java8\Services\VotingService.class
+com\example\appengine\java8\EmailReminder.class
 com\example\appengine\java8\EmailImportServlet.class
 com\example\appengine\java8\AddCandidateServlet.class

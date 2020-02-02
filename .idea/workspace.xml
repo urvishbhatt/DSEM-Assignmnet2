@@ -1,11 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2755847-8689-4080-b1a8-9ca0953b12ad" name="Default Changelist" comment="" />
+    <list default="true" id="a2755847-8689-4080-b1a8-9ca0953b12ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/EmailReminder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/Entity/Candidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/Services/CandidateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/Services/UploadEmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/Services/VotingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/helloworld.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/helloworld.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/AddCandidateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/AddCandidateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/BackendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/BackendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/DatePickerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/DatePickerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/EmailImportServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/EmailImportServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/Services/DateSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/Services/DateSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/VotingPortalServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/appengine/java8/VotingPortalServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/add_candidate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add_candidate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/backendservlet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/backendservlet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/email_import.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/email_import.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/voting_portal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/voting_portal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/appengine-generated/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/appengine-generated/app.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/AddCandidateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/AddCandidateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/BackendServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/BackendServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/DatePickerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/DatePickerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/EmailImportServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/classes/com/example/appengine/java8/EmailImportServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/lib/_ah_compiled_jsps-0000.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/lib/_ah_compiled_jsps-0000.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/add_candidate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/add_candidate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/app.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/backendservlet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/backendservlet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/datepicker.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/datepicker.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/appengine-staging/email_import.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/appengine-staging/email_import.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/appengine-generated/datastore-indexes-auto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/appengine-generated/datastore-indexes-auto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/appengine-generated/local_db.bin" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/appengine-generated/local_db.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/AddCandidateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/AddCandidateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/BackendServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/BackendServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/DatePickerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/DatePickerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/EmailImportServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/EmailImportServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/Services/DateSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/Services/DateSetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/VotingPortalServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/classes/com/example/appengine/java8/VotingPortalServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/add_candidate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/add_candidate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/backendservlet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/backendservlet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/email_import.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/email_import.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/voting_portal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld-1.0-SNAPSHOT/voting_portal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.appengine.java8.HelloAppEngineTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.appengine.java8.HelloAppEngineTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.appengine.java8.HelloAppEngineTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.appengine.java8.HelloAppEngineTest.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -45,13 +115,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Tag Library Descriptor" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\ubhatt\Desktop\Bamberg\Assignmnet 2\appengine-project-template\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1VLaGFwQDZWUvuccG75wwsJ0c7U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -59,8 +140,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -218,7 +301,11 @@
       <workItem from="1580245556129" duration="4021000" />
       <workItem from="1580286113924" duration="2849000" />
       <workItem from="1580310387972" duration="7119000" />
-      <workItem from="1580469241481" duration="8660000" />
+      <workItem from="1580469241481" duration="18034000" />
+      <workItem from="1580554011689" duration="8033000" />
+      <workItem from="1580570703369" duration="3614000" />
+      <workItem from="1580580104521" duration="9074000" />
+      <workItem from="1580640413776" duration="473000" />
     </task>
     <servers />
   </component>
@@ -230,16 +317,21 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="178" y="118" width="1092" height="747" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/-1920.-26.1920.1040@0.0.1680.1010" timestamp="1579019520651" />
-    <state x="2505" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1580469890079">
+    <state x="2533" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580557982496">
+      <screen x="1920" y="16" width="1680" height="1010" />
+    </state>
+    <state x="2533" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.16.1680.1010@1920.16.1680.1010" timestamp="1580557982496" />
+    <state x="2505" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1580588310783">
       <screen x="1920" y="16" width="1680" height="1010" />
     </state>
     <state x="-1095" y="104" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1680.30.1680.1010/-3600.15.1920.1040@-1680.30.1680.1010" timestamp="1580316225139" />
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1024.728@0.0.1280.680" timestamp="1579643028136" />
-    <state x="2505" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.16.1680.1010@1920.16.1680.1010" timestamp="1580469890079" />
+    <state x="2505" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.16.1680.1010@1920.16.1680.1010" timestamp="1580588310783" />
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580246826906" />
-    <state x="472" y="190" key="FileChooserDialogImpl" timestamp="1579038255043">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2540" y="298" key="FileChooserDialogImpl" timestamp="1580558047904">
+      <screen x="1920" y="16" width="1680" height="1010" />
     </state>
+    <state x="2540" y="298" key="FileChooserDialogImpl/0.0.1280.680/1920.16.1680.1010@1920.16.1680.1010" timestamp="1580558047904" />
     <state x="472" y="190" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1579038255043" />
     <state x="620" y="287" key="FileChooserDialogImpl/0.0.1680.1010/-1920.-26.1920.1040@0.0.1680.1010" timestamp="1579021961882" />
     <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1579021972022">
@@ -267,13 +359,18 @@
     </state>
     <state x="139" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1579038768793" />
     <state x="341" y="147" key="SettingsEditor/0.0.1680.1010/-1920.-26.1920.1040@0.0.1680.1010" timestamp="1579017533734" />
-    <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1579640047975">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2362" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1580571001624">
+      <screen x="1920" y="16" width="1680" height="1010" />
     </state>
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1680.30.1680.1010/-3600.15.1920.1040@0.0.1280.680" timestamp="1579540263514" />
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1024.728@0.0.1280.680" timestamp="1579640047975" />
+    <state x="2362" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.16.1680.1010@1920.16.1680.1010" timestamp="1580571001624" />
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579556435441" />
     <state x="442" y="244" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/-1920.-26.1920.1040@0.0.1680.1010" timestamp="1579100359085" />
+    <state x="2109" y="212" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1580503226630">
+      <screen x="1920" y="16" width="1680" height="1010" />
+    </state>
+    <state x="2109" y="212" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1280.680/1920.16.1680.1010@1920.16.1680.1010" timestamp="1580503226630" />
     <state x="222" y="107" key="new project wizard" timestamp="1579021968274">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

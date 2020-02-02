@@ -1,7 +1,6 @@
 package com.example.appengine.java8;
 
 import com.example.appengine.java8.Services.DateSetter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,7 +10,6 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 
 @WebServlet("/date_pick_form")
@@ -31,13 +29,10 @@ public class DatePickerServlet extends HttpServlet {
             DateSetter dateSetter = new DateSetter();
             dateSetter.create(begin_date,end_date);
 
+            req.getRequestDispatcher("/").forward(req,resp);
+
         } catch (ParseException e) {
             e.printStackTrace();
         }
-    }
-
-    private static java.sql.Date convertUtilToSql(java.util.Date uDate) {
-        java.sql.Date sDate = new java.sql.Date(uDate.getTime());
-        return sDate;
     }
 }

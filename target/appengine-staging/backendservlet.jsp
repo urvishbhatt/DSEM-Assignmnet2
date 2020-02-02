@@ -28,7 +28,10 @@
                 <td><a href="/email_import" type="button" class="btn btn-primary">Email Adding</a></td>
             </tr>
             <tr>
-                <td><button type="button" class="btn btn-primary">Email Reminder</button></td>
+                <td>
+                    <form id="send_mail"  action="/send_mail" method="post">
+                        <button type="button" class="btn btn-primary">Email Reminder</button></td>
+                    </form>
             </tr>
         </tbody>
     </table>

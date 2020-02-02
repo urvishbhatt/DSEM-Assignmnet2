@@ -21,29 +21,23 @@
 <div class="container">
     <div class="row row-content">
         <h2>
-            <title>Beverages Creation</title>
+            <title>Candidate Creation</title>
         </h2>
         <div class="col-sm-3">
-            <form role="form" action="BeverageServlet" method="post">
+            <form role="form" action="/adding_candidate_database" method="post">
                 <div class="form-group">
-                    <label>Beverage Name</label>
-                    <input type="text" class="form-control .col-sm-*" name="beverage_name" required>
+                    <label>Candidate Name</label>
+                    <input type="text" class="form-control .col-sm-*" name="candidate_name" required>
                 </div>
                 <div class="form-group">
-                    <label>Manufacturer Name</label>
-                    <input type="text" class="form-control inputsm" name="beverage_manufacturer" required>
+                    <label>Candidate Surname</label>
+                    <input type="text" class="form-control inputsm" name="candidate_surname" required>
                 </div>
                 <div class="form-group">
-                    <input type="hidden" class="form-control inputsm" name="beverage_promotion">
+                    <label>Candidate Faculty</label>
+                    <input type="text" class="form-control inputsm" name="candidate_faculty" required>
                 </div>
-                <div class="form-group">
-                    <label>Quantity</label>
-                    <input type="number" class="form-control inputsm" name="beverage_quantity" required>
-                </div>
-                <div class="form-group">
-                    <label>Price</label>
-                    <input type="number" class="form-control inputsm" name="beverage_price" required>
-                </div>
+
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>
         </div>

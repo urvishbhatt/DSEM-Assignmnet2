@@ -30,7 +30,6 @@
 		<servlet-class>com.example.appengine.java8.AddCandidateServlet</servlet-class>
 	</servlet>
 
-
 	<servlet-mapping>
 		<servlet-name>email_import</servlet-name>
 		<url-pattern>/email_import</url-pattern>
@@ -48,4 +47,57 @@
 		<servlet-name>voting_portal</servlet-name>
 		<servlet-class>com.example.appengine.java8.VotingPortalServlet</servlet-class>
 	</servlet>
+
+
+	<!---Un comment when you use with Google Cloude-->
+
+	<servlet-mapping>
+		<servlet-name>add_candidate_post</servlet-name>
+		<url-pattern>/adding_candidate_database</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>add_candidate_post</servlet-name>
+		<servlet-class>com.example.appengine.java8.AddCandidateServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>email_import_data</servlet-name>
+		<url-pattern>/email_import_data</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>email_import_data</servlet-name>
+		<servlet-class>com.example.appengine.java8.EmailImportServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>send_mail</servlet-name>
+		<url-pattern>/send_mail</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>send_mail</servlet-name>
+		<servlet-class>com.example.appengine.java8.BackendServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>date_pick_form</servlet-name>
+		<url-pattern>/date_pick_form</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>date_pick_form</servlet-name>
+		<servlet-class>com.example.appengine.java8.DatePickerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>adding_vote_database</servlet-name>
+		<url-pattern>/adding_vote_database</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>adding_vote_database</servlet-name>
+		<servlet-class>com.example.appengine.java8.VotingPortalServlet</servlet-class>
+	</servlet>
+
+<!--		///-->
+
+
+
 </web-app>

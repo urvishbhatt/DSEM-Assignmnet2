@@ -23,6 +23,26 @@ handlers:
   script: unused
   login: optional
   secure: optional
+- url: /adding_vote_database
+  script: unused
+  login: optional
+  secure: optional
+- url: /date_pick_form
+  script: unused
+  login: optional
+  secure: optional
+- url: /send_mail
+  script: unused
+  login: optional
+  secure: optional
+- url: /email_import_data
+  script: unused
+  login: optional
+  secure: optional
+- url: /adding_candidate_database
+  script: unused
+  login: optional
+  secure: optional
 - url: /voting_portal
   script: unused
   login: optional
