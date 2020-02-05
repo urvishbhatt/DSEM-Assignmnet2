@@ -25,20 +25,22 @@
     <h1>Voting Portal</h1>
 
     <div class="col-sm-3">
-        <form role="form" action="/adding_vote_database" method="post">
+        <form role="form" action="/user/adding_vote_database" method="post">
 
             <% List<Candidate> candidateList = (List<Candidate>) request.getAttribute("CandidateList");
                 for(Candidate candidate: candidateList) {
             %>
             <div class="radio">
-                <label><input type="radio" name="candidate_name_vote" value="<%= candidate.name %>" checked><%= candidate.name %></label>
+                <label><input type="radio" name="candidate_name_vote" value="<%= candidate.getKey() %>" checked><%= candidate.name %></label>
             </div>
             <% } %>
 
+            <% String voterKey = (String)request.getAttribute("VoterKey"); %>
             <div class="form-group">
-                <label>Please Enter your Key</label>
-                <input type="text" class="form-control .col-sm-*" name="student_key" required>
+                <label>Your One Time Token for Election</label>
+                <input type="text" class="form-control .col-sm-*" name="student_key" value="<%= voterKey %>" readonly>
             </div>
+
 
             <button type="submit" class="btn btn-success">Submit</button>
         </form>

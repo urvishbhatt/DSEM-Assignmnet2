@@ -20,12 +20,12 @@
 
 <body>
     <div class="col-sm-3">
-        <form id="upload_file_form_id"  action="/email_import_data" method="post" enctype="multipart/form-data">
+        <form id="upload_file_form_id"  action="email_import_data" method="post" enctype="multipart/form-data">
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="file_id" name="myFile">
                 <input type="submit" style="display:inline;" class="btn btn-primary" value="Upload">
                 <small  class="form-text text-muted">
-                    Upload a CSV file that contains name as first colomn and email as second
+                    Upload a CSV file that contains email
                 </small>
             </div>
         </form>

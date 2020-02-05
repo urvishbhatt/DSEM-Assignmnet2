@@ -19,21 +19,21 @@
         </thead>
         <tbody>
             <tr>
-                <td><a href="/datepicker" class="btn btn-info" role="button">Start and End Date</a></td>
+                <td><a href="/backend/datepicker" class="btn btn-info" role="button">Start and End Date</a></td>
             </tr>
             <tr>
-                <td><a href="/add_candidate" type="button" class="btn btn-primary">Candidate Adding</a></td>
+                <td><a href="/backend/add_candidate" type="button" class="btn btn-primary">Candidate Adding</a></td>
             </tr>
             <tr>
-                <td><a href="/email_import" type="button" class="btn btn-primary">Email Adding</a></td>
-            </tr>
-            <tr>
-                <td>
-                    <form id="send_mail"  action="/send_mail" method="post">
-                        <button type="button" class="btn btn-primary">Email Reminder</button></td>
-                    </form>
+                <td><a href="/backend/email_import" type="button" class="btn btn-primary">Email Adding</a></td>
             </tr>
         </tbody>
     </table>
+
+    <div class="col-sm-3">
+        <form role="form" action="/backend/send_mail" method="post">
+            <button type="submit" class="btn btn-success">Email Reminder</button>
+        </form>
+    </div>
 </body>
 </html>

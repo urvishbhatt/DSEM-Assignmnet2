@@ -18,7 +18,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 
-@WebServlet("/email_import_data")
+@WebServlet("/backend/email_import_data")
 public class EmailImportServlet extends HttpServlet {
 
     @Override
@@ -44,9 +44,8 @@ public class EmailImportServlet extends HttpServlet {
                         }
                     }
                 }
-            } catch (Exception e) {
-
-            }
+            } catch (Exception e) {}
+            req.getRequestDispatcher("/").forward(req,resp);
         }
     }
 }

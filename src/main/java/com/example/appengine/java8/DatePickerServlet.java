@@ -12,7 +12,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 
-@WebServlet("/date_pick_form")
+@WebServlet("/backend/date_pick_form")
 public class DatePickerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -24,7 +24,7 @@
             <title>Candidate Creation</title>
         </h2>
         <div class="col-sm-3">
-            <form role="form" action="/adding_candidate_database" method="post">
+            <form role="form" action="/backend/adding_candidate_database" method="post">
                 <div class="form-group">
                     <label>Candidate Name</label>
                     <input type="text" class="form-control .col-sm-*" name="candidate_name" required>

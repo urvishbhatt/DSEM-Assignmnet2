@@ -1,13 +1,24 @@
 package com.example.appengine.java8;
 
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserServiceFactory;
+
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Properties;
 
-@WebServlet("/send_mail")
+@WebServlet("/backend/send_mail")
 public class BackendServlet extends HttpServlet {
 
     @Override
@@ -16,5 +27,25 @@ public class BackendServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException { }
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Properties props = new Properties();
+        Session session = Session.getDefaultInstance(props, null);
+        User user = UserServiceFactory.getUserService().getCurrentUser();
+
+        try {
+            Message msg = new MimeMessage(session);
+            msg.setFrom(new InternetAddress(user.getEmail()));
+            msg.addRecipient(Message.RecipientType.TO,
+                    new InternetAddress("bhatturvish8@gmail.com"));
+            msg.setSubject("DSG - Email Reminder");
+            msg.setText("Please send use this link to assign vote https://dsg-assignmnet2.appspot.com/user/voting_portal");
+            Transport.send(msg);
+            System.out.print("Email sent");
+        } catch (AddressException e) {
+            e.printStackTrace();
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

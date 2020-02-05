@@ -19,16 +19,17 @@ public class CandidateService {
     }
 //
     public List<Candidate> getCandidateList(){
-//    public void getCandidateList(){
         DatastoreService ds = DatastoreServiceFactory.getDatastoreService();
         Query q = new Query("Cadidates");
         PreparedQuery pq = ds.prepare(q);
         List<Candidate> candidateList = new ArrayList<>();
+
         for (Entity result : pq.asIterable()) {
+            String key = String.valueOf(result.getKey().getId());
             String name = (String) result.getProperty("Name");
             String surname = (String) result.getProperty("Surname");
             String faculty = (String) result.getProperty("Faculty");
-            Candidate candidate = new Candidate(name,surname,faculty);
+            Candidate candidate = new Candidate(key,name,surname,faculty);
             candidateList.add(candidate);
         }
 

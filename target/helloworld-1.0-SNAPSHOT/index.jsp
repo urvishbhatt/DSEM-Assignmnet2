@@ -42,11 +42,7 @@
     </div>
 
     <div class="table-row-cell">
-      <a href="/email" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Send Email To All Student</a>
-    </div>
-
-    <div class="table-row-cell">
-      <a href="/voting_portal" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Voting System</a>
+      <a href="/user/voting_portal" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Voting System</a>
     </div>
 
     <div class="table-row-cell">

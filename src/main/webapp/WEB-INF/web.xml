@@ -14,7 +14,7 @@
 
 	<servlet-mapping>
 		<servlet-name>DatePicker</servlet-name>
-		<url-pattern>/datepicker</url-pattern>
+		<url-pattern>/backend/datepicker</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>DatePicker</servlet-name>
@@ -23,7 +23,7 @@
 
 	<servlet-mapping>
 		<servlet-name>add_candidate</servlet-name>
-		<url-pattern>/add_candidate</url-pattern>
+		<url-pattern>/backend/add_candidate</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>add_candidate</servlet-name>
@@ -32,7 +32,7 @@
 
 	<servlet-mapping>
 		<servlet-name>email_import</servlet-name>
-		<url-pattern>/email_import</url-pattern>
+		<url-pattern>/backend/email_import</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>email_import</servlet-name>
@@ -41,19 +41,37 @@
 
 	<servlet-mapping>
 		<servlet-name>voting_portal</servlet-name>
-		<url-pattern>/voting_portal</url-pattern>
+		<url-pattern>/user/voting_portal</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>voting_portal</servlet-name>
 		<servlet-class>com.example.appengine.java8.VotingPortalServlet</servlet-class>
 	</servlet>
 
+	<servlet-mapping>
+		<servlet-name>result_servlet</servlet-name>
+		<url-pattern>/result</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>result_servlet</servlet-name>
+		<servlet-class>com.example.appengine.java8.ResultServlet</servlet-class>
+	</servlet>
+
 
 	<!---Un comment when you use with Google Cloude-->
 
 	<servlet-mapping>
+		<servlet-name>date_pick_form</servlet-name>
+		<url-pattern>/backend/date_pick_form</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>date_pick_form</servlet-name>
+		<servlet-class>com.example.appengine.java8.DatePickerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
 		<servlet-name>add_candidate_post</servlet-name>
-		<url-pattern>/adding_candidate_database</url-pattern>
+		<url-pattern>/backend/adding_candidate_database</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>add_candidate_post</servlet-name>
@@ -62,7 +80,7 @@
 
 	<servlet-mapping>
 		<servlet-name>email_import_data</servlet-name>
-		<url-pattern>/email_import_data</url-pattern>
+		<url-pattern>/backend/email_import_data</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>email_import_data</servlet-name>
@@ -70,34 +88,49 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>send_mail</servlet-name>
-		<url-pattern>/send_mail</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>send_mail</servlet-name>
-		<servlet-class>com.example.appengine.java8.BackendServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>date_pick_form</servlet-name>
-		<url-pattern>/date_pick_form</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>date_pick_form</servlet-name>
-		<servlet-class>com.example.appengine.java8.DatePickerServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
 		<servlet-name>adding_vote_database</servlet-name>
-		<url-pattern>/adding_vote_database</url-pattern>
+		<url-pattern>/user/adding_vote_database</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>adding_vote_database</servlet-name>
 		<servlet-class>com.example.appengine.java8.VotingPortalServlet</servlet-class>
 	</servlet>
 
-<!--		///-->
+	<servlet-mapping>
+		<servlet-name>send_mail</servlet-name>
+		<url-pattern>/backend/send_mail</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>send_mail</servlet-name>
+		<servlet-class>com.example.appengine.java8.BackendServlet</servlet-class>
+	</servlet>
 
 
+
+<!--	==============================================================================	-->
+
+<!--	This code use for authentication of google -->
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>admin</web-resource-name>
+			<url-pattern>/backend/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>user</web-resource-name>
+			<url-pattern>/user/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>*</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+<!-- ==================================================================================  -->
 
 </web-app>
