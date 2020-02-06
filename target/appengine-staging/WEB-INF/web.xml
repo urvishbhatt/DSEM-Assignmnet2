@@ -6,28 +6,8 @@
 	<!-- JSPC servlet mappings start -->
 
     <servlet>
-        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.email_005fimport_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.result_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.result_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.text_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.text_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.datepicker_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.voting_005fportal_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -36,8 +16,23 @@
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.result_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.result_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <servlet-class>org.apache.jsp.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.email_005fimport_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.backendservlet_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -46,33 +41,18 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.backendservlet_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.voting_005fportal_jsp</servlet-class>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
-        <url-pattern>/email_import.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.result_jsp</servlet-name>
-        <url-pattern>/result.jsp</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.datepicker_jsp</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.text_jsp</servlet-name>
         <url-pattern>/WEB-INF/text.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
-        <url-pattern>/datepicker.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
-        <url-pattern>/voting_portal.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -81,8 +61,23 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.result_jsp</servlet-name>
+        <url-pattern>/result.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
+        <url-pattern>/email_import.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
+        <url-pattern>/backendservlet.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -91,8 +86,13 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
-        <url-pattern>/backendservlet.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
+        <url-pattern>/voting_portal.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
+        <url-pattern>/datepicker.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->
@@ -154,50 +154,50 @@
 
 	<!---Un comment when you use with Google Cloude-->
 
-<!--	<servlet-mapping>-->
-<!--		<servlet-name>date_pick_form</servlet-name>-->
-<!--		<url-pattern>/backend/date_pick_form</url-pattern>-->
-<!--	</servlet-mapping>-->
-<!--	<servlet>-->
-<!--		<servlet-name>date_pick_form</servlet-name>-->
-<!--		<servlet-class>com.example.appengine.java8.DatePickerServlet</servlet-class>-->
-<!--	</servlet>-->
+	<servlet-mapping>
+		<servlet-name>date_pick_form</servlet-name>
+		<url-pattern>/backend/date_pick_form</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>date_pick_form</servlet-name>
+		<servlet-class>com.example.appengine.java8.DatePickerServlet</servlet-class>
+	</servlet>
 
-<!--	<servlet-mapping>-->
-<!--		<servlet-name>add_candidate_post</servlet-name>-->
-<!--		<url-pattern>/backend/adding_candidate_database</url-pattern>-->
-<!--	</servlet-mapping>-->
-<!--	<servlet>-->
-<!--		<servlet-name>add_candidate_post</servlet-name>-->
-<!--		<servlet-class>com.example.appengine.java8.AddCandidateServlet</servlet-class>-->
-<!--	</servlet>-->
+	<servlet-mapping>
+		<servlet-name>add_candidate_post</servlet-name>
+		<url-pattern>/backend/adding_candidate_database</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>add_candidate_post</servlet-name>
+		<servlet-class>com.example.appengine.java8.AddCandidateServlet</servlet-class>
+	</servlet>
 
-<!--	<servlet-mapping>-->
-<!--		<servlet-name>email_import_data</servlet-name>-->
-<!--		<url-pattern>/backend/email_import_data</url-pattern>-->
-<!--	</servlet-mapping>-->
-<!--	<servlet>-->
-<!--		<servlet-name>email_import_data</servlet-name>-->
-<!--		<servlet-class>com.example.appengine.java8.EmailImportServlet</servlet-class>-->
-<!--	</servlet>-->
+	<servlet-mapping>
+		<servlet-name>email_import_data</servlet-name>
+		<url-pattern>/backend/email_import_data</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>email_import_data</servlet-name>
+		<servlet-class>com.example.appengine.java8.EmailImportServlet</servlet-class>
+	</servlet>
 
-<!--	<servlet-mapping>-->
-<!--		<servlet-name>adding_vote_database</servlet-name>-->
-<!--		<url-pattern>/user/adding_vote_database</url-pattern>-->
-<!--	</servlet-mapping>-->
-<!--	<servlet>-->
-<!--		<servlet-name>adding_vote_database</servlet-name>-->
-<!--		<servlet-class>com.example.appengine.java8.VotingPortalServlet</servlet-class>-->
-<!--	</servlet>-->
+	<servlet-mapping>
+		<servlet-name>adding_vote_database</servlet-name>
+		<url-pattern>/user/adding_vote_database</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>adding_vote_database</servlet-name>
+		<servlet-class>com.example.appengine.java8.VotingPortalServlet</servlet-class>
+	</servlet>
 
-<!--	<servlet-mapping>-->
-<!--		<servlet-name>send_mail</servlet-name>-->
-<!--		<url-pattern>/backend/send_mail</url-pattern>-->
-<!--	</servlet-mapping>-->
-<!--	<servlet>-->
-<!--		<servlet-name>send_mail</servlet-name>-->
-<!--		<servlet-class>com.example.appengine.java8.BackendServlet</servlet-class>-->
-<!--	</servlet>-->
+	<servlet-mapping>
+		<servlet-name>send_mail</servlet-name>
+		<url-pattern>/backend/send_mail</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>send_mail</servlet-name>
+		<servlet-class>com.example.appengine.java8.BackendServlet</servlet-class>
+	</servlet>
 
 
 
@@ -205,25 +205,25 @@
 
 <!--	This code use for authentication of google -->
 
-<!--	<security-constraint>-->
-<!--		<web-resource-collection>-->
-<!--			<web-resource-name>admin</web-resource-name>-->
-<!--			<url-pattern>/backend/*</url-pattern>-->
-<!--		</web-resource-collection>-->
-<!--		<auth-constraint>-->
-<!--			<role-name>admin</role-name>-->
-<!--		</auth-constraint>-->
-<!--	</security-constraint>-->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>admin</web-resource-name>
+			<url-pattern>/backend/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
 
-<!--	<security-constraint>-->
-<!--		<web-resource-collection>-->
-<!--			<web-resource-name>user</web-resource-name>-->
-<!--			<url-pattern>/user/*</url-pattern>-->
-<!--		</web-resource-collection>-->
-<!--		<auth-constraint>-->
-<!--			<role-name>*</role-name>-->
-<!--		</auth-constraint>-->
-<!--	</security-constraint>-->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>user</web-resource-name>
+			<url-pattern>/user/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>*</role-name>
+		</auth-constraint>
+	</security-constraint>
 
 <!-- ==================================================================================  -->
 

@@ -1,5 +1,7 @@
 package com.example.appengine.java8;
 
+import com.example.appengine.java8.Entity.Emails;
+import com.example.appengine.java8.Services.UploadEmailService;
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserServiceFactory;
 
@@ -16,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 @WebServlet("/backend/send_mail")
@@ -35,17 +38,21 @@ public class BackendServlet extends HttpServlet {
         try {
             Message msg = new MimeMessage(session);
             msg.setFrom(new InternetAddress(user.getEmail()));
-            msg.addRecipient(Message.RecipientType.TO,
-                    new InternetAddress("bhatturvish8@gmail.com"));
+
+            UploadEmailService uploadEmailService = new UploadEmailService();
+            List<Emails> uploadEmailServiceList = uploadEmailService.getMail();
+
+            for (Emails emails : uploadEmailServiceList){
+                msg.addRecipient(Message.RecipientType.TO,
+                        new InternetAddress(emails.getEmail()));
+            }
             msg.setSubject("DSG - Email Reminder");
-            msg.setText("Please send use this link to assign vote https://dsg-assignmnet2.appspot.com/user/voting_portal");
+            msg.setText("Please use this link to assign vote https://dsg-assignmnet2.appspot.com/user/voting_portal");
             Transport.send(msg);
-            System.out.print("Email sent");
         } catch (AddressException e) {
             e.printStackTrace();
         } catch (MessagingException e) {
             e.printStackTrace();
         }
-
     }
 }

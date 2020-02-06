@@ -26,6 +26,8 @@ public class VotingService {
         for (Entity result : pq.asIterable()) {
             String vote_to = (String) result.getProperty("VoteTo");
             String token_number = (String) result.getProperty("From_Token_Number");
+            Votes votes = new Votes(vote_to,token_number);
+            votesList.add(votes);
         }
         return votesList;
     }

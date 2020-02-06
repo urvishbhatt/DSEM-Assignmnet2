@@ -1,7 +1,9 @@
 com\example\appengine\java8\DatePickerServlet.class
+com\example\appengine\java8\Entity\VotingResult.class
 com\example\appengine\java8\Services\DateSetter.class
 com\example\appengine\java8\Services\VotingService.class
 com\example\appengine\java8\EmailReminder.class
+com\example\appengine\java8\Entity\SortbyVote.class
 com\example\appengine\java8\AddCandidateServlet.class
 com\example\appengine\java8\ResultServlet.class
 com\example\appengine\java8\Services\CandidateService.class

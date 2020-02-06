@@ -7,9 +7,37 @@ threadsafe: True
 auto_id_policy: default
 api_version: 'user_defined'
 handlers:
+- url: /user/.*/
+  script: unused
+  login: required
+  secure: optional
 - url: /
   script: unused
   login: optional
+  secure: optional
+- url: /user/
+  script: unused
+  login: required
+  secure: optional
+- url: /backend/.*/
+  script: unused
+  login: admin
+  secure: optional
+- url: /user/.*\.jsp
+  script: unused
+  login: required
+  secure: optional
+- url: /backend
+  script: unused
+  login: admin
+  secure: optional
+- url: /backend/
+  script: unused
+  login: admin
+  secure: optional
+- url: /backend/.*\.jsp
+  script: unused
+  login: admin
   secure: optional
 - url: /.*/
   script: unused
@@ -19,33 +47,49 @@ handlers:
   script: unused
   login: optional
   secure: optional
+- url: /backend/send_mail
+  script: unused
+  login: admin
+  secure: optional
+- url: /backend/email_import_data
+  script: unused
+  login: admin
+  secure: optional
+- url: /user/adding_vote_database
+  script: unused
+  login: required
+  secure: optional
+- url: /user/voting_portal
+  script: unused
+  login: required
+  secure: optional
 - url: .*\.jsp
   script: unused
   login: optional
+  secure: optional
+- url: /backend/adding_candidate_database
+  script: unused
+  login: admin
+  secure: optional
+- url: /backend/date_pick_form
+  script: unused
+  login: admin
+  secure: optional
+- url: /backend/email_import
+  script: unused
+  login: admin
+  secure: optional
+- url: /backend/add_candidate
+  script: unused
+  login: admin
   secure: optional
 - url: /result
   script: unused
   login: optional
   secure: optional
-- url: /user/voting_portal
-  script: unused
-  login: optional
-  secure: optional
-- url: /backend/email_import
-  script: unused
-  login: optional
-  secure: optional
-- url: /backend/add_candidate
-  script: unused
-  login: optional
-  secure: optional
 - url: /backend/datepicker
   script: unused
-  login: optional
-  secure: optional
-- url: /backend
-  script: unused
-  login: optional
+  login: admin
   secure: optional
 
 skip_files: app.yaml

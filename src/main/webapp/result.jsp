@@ -1,5 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.example.appengine.java8.Entity.Candidate" %><%--
+<%@ page import="com.example.appengine.java8.Entity.Candidate" %>
+<%@ page import="com.example.appengine.java8.Entity.VotingResult" %><%--
   Created by IntelliJ IDEA.
   User: ubhatt
   Date: 2/5/2020
@@ -60,17 +61,14 @@
                 </thead>
                 <tbody>
                 <%
-                    List<Candidate> candidateVotes = (List<Candidate>) request.getAttribute("candidateName");
-                    for (Candidate candidate : candidateVotes){
-
-
-
+                    List<VotingResult> votingResultList = (List<VotingResult>) request.getAttribute("votingResultList");
+                    for (VotingResult votingResult : votingResultList){
                 %>
 
                 <tr>
-                    <td><%= candidate.name %></td>
-                    <td><%= candidate.faculty %></td>
-                    <td><%= Percentage%></td>
+                    <td><%= votingResult.getName() %></td>
+                    <td><%= votingResult.getFaculty() %></td>
+                    <td><%= votingResult.getVotes() %></td>
                 </tr>
 
                 <%
@@ -85,3 +83,5 @@
 
 </body>
 </html>
+
+

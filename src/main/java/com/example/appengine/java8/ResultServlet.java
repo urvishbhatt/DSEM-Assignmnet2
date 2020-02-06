@@ -1,6 +1,9 @@
 package com.example.appengine.java8;
 
 import com.example.appengine.java8.Entity.Candidate;
+import com.example.appengine.java8.Entity.SortbyVote;
+import com.example.appengine.java8.Entity.Votes;
+import com.example.appengine.java8.Entity.VotingResult;
 import com.example.appengine.java8.Services.CandidateService;
 import com.example.appengine.java8.Services.UploadEmailService;
 import com.example.appengine.java8.Services.VotingService;
@@ -10,8 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ResultServlet extends HttpServlet {
     @Override
@@ -30,14 +32,42 @@ public class ResultServlet extends HttpServlet {
 
         CandidateService candidateService = new CandidateService();
         List<Candidate> candidateList = candidateService.getCandidateList();
+//        List<String> candidateKey = new ArrayList<>();
 
-        List<Integer> candidateVotes = new ArrayList<>();
-        for (Candidate candidate : candidateList){
-            candidateVotes.add(votingService.candidateVote(candidate.key));
+        List<Votes> votesList = votingService.getVote();
+        List<String> vote_to_List = new ArrayList<>();
+
+        for (Votes votes : votesList){
+            vote_to_List.add(votes.getVote_to());
         }
 
-        req.setAttribute("candidateName",candidateList);
-        req.setAttribute("candidateVotes",candidateVotes);
+//        for (Candidate candidate : candidateList){
+//            candidateKey.add(candidate.getKey());
+//        }
+
+        Map<String, Integer> countMap = new HashMap<>();
+
+        for (String item: vote_to_List) {
+            if (countMap.containsKey(item))
+                countMap.put(item, countMap.get(item) + 1);
+            else
+                countMap.put(item, 1);
+        }
+
+        List<VotingResult> votingResultList = new ArrayList<>();
+        for (Candidate candidate : candidateList){
+            if (countMap.containsKey(candidate.key)){
+                VotingResult votingResult = new VotingResult(candidate.name,candidate.faculty,countMap.get(candidate.key));
+                votingResultList.add(votingResult);
+            }else {
+                VotingResult votingResult = new VotingResult(candidate.name,candidate.faculty,0);
+                votingResultList.add(votingResult);
+            }
+        }
+
+        Collections.sort(votingResultList, new SortbyVote());
+
+        req.setAttribute("votingResultList",votingResultList);
         req.setAttribute("CASTED_Votes",CASTED_Votes);
         req.setAttribute("ELIGIBLE_Voter",ELIGIBLE_Voter);
         req.setAttribute("Percentage",Percentage);
