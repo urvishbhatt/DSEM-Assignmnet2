@@ -58,7 +58,7 @@
 	</servlet>
 
 
-	<!---Un comment when you use with Google Cloude-->
+	<!---comment this when you want use with Local Google App engine-->
 
 	<servlet-mapping>
 		<servlet-name>date_pick_form</servlet-name>

@@ -1,6 +1,32 @@
 HelloWorld for App Engine Standard (Java 8)
-============================
+===================================================================================================================
 
+Election System used Google App Engine as a hosting service and database management system service. 
+
+Election system divide in three-part 
+
+Election system divide in three-part 
+    1. Backend 
+    2. Voting system 
+    3. Election Result 
+
+1. Backend contains 4 functionality 
+Date:- starting and ending date of Election 
+Candidate Adding:- Add candidate with name, surname, and Faculty
+Email Adding:- Import eligible votes voting id
+Email reminder:- a reminder to all voters
+
+Only owner of this project can access Backend
+
+2. Voting System
+Imported Email id by admin can access this page. the voter can vote their using their token. a token is nothing but their auto-generated  Id. voters even don't have to write by themself.
+When Voters assign their vote, System Save Voters id with voted candidates id to the database.
+Only once a vote is assigned by voter he or she no longer able to access that page
+
+3. Result 
+The result page shows the result of voting. it's not authenticated so anyone can access it.
+
+//---------------------------------------------------------------------------------------------//
 This sample demonstrates how to deploy an application on Google App Engine.
 
 See the [Google App Engine standard environment documentation][ae-docs] for more

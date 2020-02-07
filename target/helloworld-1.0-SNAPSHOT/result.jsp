@@ -77,6 +77,11 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="container">
+            <% String Winner = (String)request.getAttribute("winner"); %>
+            <h3>Winner Of Election = <%= Winner %></h3>
+        </div>
     </div>
 </div>
 

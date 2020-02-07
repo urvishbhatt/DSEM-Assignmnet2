@@ -67,6 +67,21 @@ public class ResultServlet extends HttpServlet {
 
         Collections.sort(votingResultList, new SortbyVote());
 
+        List<Integer> integerList = new ArrayList<>();
+        for (VotingResult votingResult : votingResultList){
+            integerList.add(votingResult.getVotes());
+        }
+
+        int maxVote = Collections.max(integerList);
+
+        String winner = "Not yet";
+        for (VotingResult votingResult : votingResultList){
+            if (maxVote == votingResult.getVotes()){
+                winner = votingResult.getName();
+            }
+        }
+
+        req.setAttribute("winner",winner);
         req.setAttribute("votingResultList",votingResultList);
         req.setAttribute("CASTED_Votes",CASTED_Votes);
         req.setAttribute("ELIGIBLE_Voter",ELIGIBLE_Voter);

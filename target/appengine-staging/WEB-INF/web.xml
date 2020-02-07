@@ -11,8 +11,8 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.add_005fcandidate_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.add_005fcandidate_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.datepicker_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -21,18 +21,18 @@
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.backendservlet_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <servlet-class>org.apache.jsp.index_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.email_005fimport_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.backendservlet_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.add_005fcandidate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.add_005fcandidate_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -41,13 +41,13 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.voting_005fportal_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.email_005fimport_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.datepicker_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.voting_005fportal_jsp</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -56,8 +56,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.add_005fcandidate_jsp</servlet-name>
-        <url-pattern>/add_candidate.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
+        <url-pattern>/datepicker.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -66,18 +66,18 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
+        <url-pattern>/backendservlet.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <url-pattern>/index.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
-        <url-pattern>/email_import.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.backendservlet_jsp</servlet-name>
-        <url-pattern>/backendservlet.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.add_005fcandidate_jsp</servlet-name>
+        <url-pattern>/add_candidate.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -86,13 +86,13 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
-        <url-pattern>/voting_portal.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.email_005fimport_jsp</servlet-name>
+        <url-pattern>/email_import.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.datepicker_jsp</servlet-name>
-        <url-pattern>/datepicker.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.voting_005fportal_jsp</servlet-name>
+        <url-pattern>/voting_portal.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->
